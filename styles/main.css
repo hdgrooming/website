@@ -1,0 +1,292 @@
+/**********
+General
+**********/
+
+body {
+  font-family: Open Sans, sans-serif;
+  color: #eee
+}
+
+h1, h2, h3 {
+  line-height: 2em;
+}
+
+nav, main {
+  position: relative;
+}
+
+main {
+  padding-top: 100px;
+}
+
+/**********
+Header
+**********/
+
+header {
+  height: 300px;
+  background-image:
+    linear-gradient(
+        rgba(0, 0, 0, .5),
+        rgba(0, 0, 0, .5)
+        ),
+      url("../images/hero.jpeg");
+  background-size: cover;
+
+}
+
+h1 {
+  font-size: 2em;
+  padding-top: 10%;
+}
+
+h3 {
+  font-size: 1em;
+  color: #ccb;
+}
+
+/**********
+Navbar
+**********/
+
+.logo {
+  float: left;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+nav {
+  height: 100px;
+  background: #3f3f41;
+  margin-bottom: -110px;
+  z-index: 1;
+  box-shadow: 0 3px 5px rgba(0,0,0,.5);
+}
+
+.navscrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+nav ul {
+  padding-top: 40px;
+  padding-right: 20px;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 37px 20px 42px 20px;
+  border-radius: 5%;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+  background: rgba(200, 200, 200, .5);
+}
+
+/**********
+Sections
+**********/
+
+
+h2 {
+  font-size: 1.75em;
+}
+
+.section-head {
+  margin-bottom: 100px;
+  background: rgba(63, 63, 65, .7);
+}
+
+section {
+  line-height: 2em;
+  padding: 10%;
+  border-top: 5px solid #3f3f41;
+}
+
+section p, {
+  line-height: 2em;
+  margin-bottom: 15px;
+}
+
+/**********
+About
+**********/
+
+#about {
+  background: #c87684;
+}
+
+#about .row {
+  margin: 25px auto;
+}
+
+.about-photo {
+  border-radius: 5%;
+  margin: 0 5%;
+}
+.facebook-gallery iframe {
+  margin: 100px auto 20px;
+  padding: 5px auto;
+  text-align: center;
+  max-width: 100%;
+  border-radius: 5%;
+  background: rgba(255,255,255,.8);
+}
+
+/**********
+Reviews
+**********/
+
+#reviews {
+  background: #c8bbb5;
+}
+
+#reviews div {
+  line-height: 2;
+}
+
+.unslider {
+  position: relative;
+}
+
+.unslider-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 95%;
+  z-index: 1000;
+}
+
+
+
+/**********
+Contact
+**********/
+
+#contact {
+  background: #5c73a8
+}
+
+.contact-text {
+  font-size: .8em;
+  margin-bottom: 15px;
+}
+
+.contact-text a {
+  color: #75b09c
+}
+
+.contact-text a:hover {
+  background: rgba(50, 50, , .5);
+}
+
+.google-maps {
+  overflow: hidden;
+  padding-bottom: 300px;
+  position: relative;
+  height: 0;
+}
+
+.google-maps iframe {
+  height: 75%;
+  width: 50%;
+  position: absolute;
+  left: 25px;
+  top: 0;
+}
+
+.fa {
+  font-size: 3em;
+  color: #ddd;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.fa:hover {
+  color: #aaa;
+  background: rgba(50, 50, 50, .5);
+}
+
+
+footer {
+  background: #3f3f41;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.footer-text {
+  font-size: .5em;
+}
+/**********
+Mobile
+**********/
+
+
+@media only screen and (max-device-width: 640px) {
+  .logo {
+    display: none;
+  }
+
+  nav {
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+  nav ul {
+    float: none;
+  }
+  nav ul li {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  nav ul li a {
+    font-size: 2em;
+    border: 1px solid grey;
+    padding: 10px;
+  }
+
+  .google-maps {
+    display: none;
+  }
+
+  .facebook-gallery {
+    display: none;
+  }
+
+  .contact-items {
+    width: 768px;
+
+  }
+
+  .about-photo {
+    margin: 50px 5%;
+  }
+}
+
+/**********
+Big Screen
+**********/
+@media only screen and (min-width: 1300px) {
+  #about p {
+    line-height: 3em;
+  }
+
+  #reviews .row .col-12 {
+    width: 50%
+  }
+}
