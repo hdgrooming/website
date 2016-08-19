@@ -4,7 +4,7 @@ General
 
 body {
   font-family: Open Sans, sans-serif;
-  color: #eee
+  color: #eee;
 }
 
 h1, h2, h3 {
@@ -112,7 +112,8 @@ h2 {
 section {
   line-height: 2em;
   padding: 10%;
-  border-top: 5px solid #3f3f41;
+  /*border-top: 3px solid #3f3f41;*/
+  box-shadow: 0 -10px 5px -5px rgba(0, 0, 0, .5);
 }
 
 section p, {
@@ -157,18 +158,6 @@ Reviews
   line-height: 2;
 }
 
-.unslider {
-  position: relative;
-}
-
-.unslider-nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 95%;
-  z-index: 1000;
-}
-
 
 
 /**********
@@ -176,7 +165,7 @@ Contact
 **********/
 
 #contact {
-  background: #5c73a8
+  background: #5c73a8;
 }
 
 .contact-text {
