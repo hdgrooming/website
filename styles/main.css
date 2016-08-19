@@ -247,6 +247,7 @@ Mobile
     font-size: 2em;
     border: 1px solid grey;
     padding: 10px;
+    background: rgba(200, 200, 200, .5)
   }
 
   .google-maps {
