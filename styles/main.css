@@ -168,6 +168,11 @@ Contact
   background: #5c73a8;
 }
 
+#contact .section-head {
+  margin: 0, auto;
+  text-align: center
+}
+
 .contact-text {
   font-size: .8em;
   margin-bottom: 15px;
@@ -178,22 +183,23 @@ Contact
 }
 
 .contact-text a:hover {
-  background: rgba(50, 50, , .5);
+  background: rgba(50, 50, 50, .5);
 }
 
-.google-maps {
-  overflow: hidden;
-  padding-bottom: 300px;
-  position: relative;
-  height: 0;
+.mount-airy iframe {
+  margin-right: 5px;
 }
 
-.google-maps iframe {
-  height: 75%;
-  width: 50%;
-  position: absolute;
-  left: 25px;
-  top: 0;
+.frederick iframe {
+  margin-left: 5px;
+}
+
+.frederick .section-head, .mount-airy .section-head {
+  margin-bottom: 0
+}
+
+.call-tag {
+  font-size: 1.2em
 }
 
 .fa {
