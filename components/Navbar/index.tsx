@@ -5,7 +5,6 @@ import { theme } from "../../theme";
 
 const Container = styled.nav`
   box-sizing: border-box;
-  /* width: 100%; */
   height: 300px;
   padding: 30px 70px;
   text-align: center;
@@ -13,7 +12,6 @@ const Container = styled.nav`
 
 const LinksContainer = styled.div`
   margin-top: 27px;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
