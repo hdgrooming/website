@@ -2,6 +2,7 @@ import Image from "next/image";
 import styled from "@emotion/styled";
 
 import { theme } from "../../theme";
+import { Section, SectionHeader } from "../Section";
 
 type LocationItemProps = {
   imageSrc: string;
@@ -49,19 +50,9 @@ const LocationItem = ({ label, imageSrc, address }: LocationItemProps) => {
   );
 };
 
-const Container = styled.section`
+const Container = styled(Section)`
   background: ${theme.color.red};
-  padding: 60px 10%;
-  text-align: center;
   color: ${theme.color.white};
-
-  ${theme.media.tablet("padding: 30px 60px;")}
-
-  h2 {
-    font-family: ${theme.font.serif};
-    font-size: 64px;
-    font-weight: 100;
-  }
 `;
 
 const LocationsGrid = styled.div`
@@ -75,7 +66,7 @@ const LocationsGrid = styled.div`
 export const Locations = () => {
   return (
     <Container>
-      <h2>Locations</h2>
+      <SectionHeader>Locations</SectionHeader>
 
       <LocationsGrid>
         {LOCATIONS.map((l) => (

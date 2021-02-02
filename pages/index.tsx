@@ -4,6 +4,13 @@ import { Navbar } from "../components/Navbar";
 import { Hero } from "../components/Hero";
 import { Story } from "../components/Story";
 import { Locations } from "../components/Locations";
+import { Team } from "../components/Team";
+import { BehindTheScenes } from "../components/BehindTheScenes";
+import { Services } from "../components/Services";
+import { Testimonials } from "../components/Testimonials";
+import { HappyDogs } from "../components/HappyDogs";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
 
 const Container = styled.main``;
 const Index = () => {
@@ -13,6 +20,13 @@ const Index = () => {
       <Hero />
       <Story />
       <Locations />
+      <Team />
+      {/* <BehindTheScenes /> */}
+      <Services />
+      <Testimonials />
+      <HappyDogs />
+      <Contact />
+      <Footer />
     </Container>
   );
 };
