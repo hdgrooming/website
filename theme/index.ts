@@ -10,4 +10,16 @@ export const theme = {
     sans: "Alef",
     serif: "Brim-Narrow",
   },
+  media: {
+    tablet: (styles: string) => `
+    @media (max-width: 992px) {
+      ${styles}
+    }
+    `,
+    phone: (styles: string) => `
+    @media (max-width: 600px) {
+      ${styles}
+    }
+    `,
+  },
 };

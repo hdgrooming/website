@@ -5,7 +5,7 @@ import { theme } from "../../theme";
 
 const Container = styled.nav`
   box-sizing: border-box;
-  width: 100%;
+  /* width: 100%; */
   height: 300px;
   padding: 30px 70px;
   text-align: center;
@@ -20,13 +20,30 @@ const LinksContainer = styled.div`
   font-family: ${theme.font.sans};
   font-size: 24px;
   font-weight: 400;
+
+  ${theme.media.tablet("font-size: 18px;")}
+  ${theme.media.phone("font-size: 16px;")}
+`;
+
+const NavLink = styled.a`
+  flex: 0 auto;
+  width: 150px;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+  padding: 8px;
+
+  &:hover {
+    color: ${theme.color.red};
+  }
 `;
 
 /* Display none on smaller sizes*/
 const Line = styled.div`
-  width: 250px;
+  flex: auto;
   height: 1px;
   background: ${theme.color.red};
+
+  ${theme.media.phone(`display: none;`)}
 `;
 
 export const Navbar = () => {
@@ -35,11 +52,11 @@ export const Navbar = () => {
       <Image src="/images/logo1.png" width={222} height={171} />
       <LinksContainer>
         <Line />
-        <a>Home</a>
-        <a>Meet the Team</a>
-        <a>Services</a>
-        <a>Happy Dogs</a>
-        <a>Contact Us</a>
+        <NavLink>Home</NavLink>
+        <NavLink>Team</NavLink>
+        <NavLink>Services</NavLink>
+        <NavLink>Happy Dogs</NavLink>
+        <NavLink>Contact Us</NavLink>
         <Line />
       </LinksContainer>
     </Container>
