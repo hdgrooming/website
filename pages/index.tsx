@@ -15,7 +15,7 @@ import { Footer } from "../components/Footer";
 const Container = styled.main``;
 const Index = () => {
   return (
-    <Container>
+    <Container id="top">
       <Navbar />
       <Hero />
       <Story />

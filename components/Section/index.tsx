@@ -4,8 +4,10 @@ import { theme } from "../../theme";
 export const Section = styled.section<{ paddedSides?: boolean }>`
   padding: 80px ${({ paddedSides = true }) => (paddedSides ? "180px" : "0px")};
 
-  ${theme.media.tablet("padding: 80px 100px;")}
-  ${theme.media.phone("padding: 80px 40px;")}
+  ${({ paddedSides = true }) =>
+    paddedSides && theme.media.tablet("padding: 80px 100px;")}
+  ${({ paddedSides = true }) =>
+    paddedSides && theme.media.phone("padding: 80px 40px;")}
 `;
 
 export const SectionHeader = styled.h2`

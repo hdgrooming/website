@@ -8,7 +8,7 @@ const Container = styled(Section)`
 `;
 export const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <SectionHeader>Contact Us</SectionHeader>
     </Container>
   );

@@ -23,8 +23,8 @@ const TESTIMONIALS: Testimonial[] = [
     key: 0,
   },
   {
-    text: "So beyond stoked. Great work. Keep it up!",
-    name: "May",
+    text: "Awesome to have you in our community. Great work; keep it up!",
+    name: "Charles",
     key: 1,
   },
 ];
@@ -35,7 +35,9 @@ const TestimonialText = styled(animated.div)`
   width: 100%;
   font-family: ${theme.font.sans};
   font-size: 24px;
+  line-height: 1.5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  min-height: 300px;
 
   h5 {
     font-style: italic;
@@ -67,7 +69,7 @@ export const Testimonials = () => {
   }, []);
 
   return (
-    <Section>
+    <Section style={{ paddingBottom: 0 }} id="testimonials">
       <Header>Testimonials</Header>
       <div
         style={{

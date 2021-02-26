@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { Parallax, withController } from "react-scroll-parallax";
 
 import { Section, SectionHeader } from "../Section";
 import { theme } from "../../theme";
@@ -30,7 +29,11 @@ const Container = styled(Section)`
   }
 `;
 
-const BottomBlurb = styled.div`
+const Blurb = styled.div`
+  padding: 0 80px;
+`;
+
+const BottomBlurb = styled(Blurb)`
   margin-top: 200px;
 
   ${theme.media.tablet("margin-top: 80px;")}
@@ -38,16 +41,16 @@ const BottomBlurb = styled.div`
 
 export const Services = () => {
   return (
-    <Container paddedSides="small">
+    <Container paddedSides={false} id="services">
       <SectionHeader>Services</SectionHeader>
       <img src="/images/left_prints.png" />
       <img src="/images/right_prints.png" />
-      <div>
+      <Blurb>
         Quick services such as nail trimming, teeth brushing, and ear cleaning
         are available to walk-in Clients. Appointments for grooming and bath
         services can be booked over the phone. We cannot guarentee availability
         for bath or grooming service packages to clients without appointments.
-      </div>
+      </Blurb>
       <BottomBlurb>
         We recommend booking grooming appointments at least one week in advance
         to secure the appointment times that are most convenient for you.

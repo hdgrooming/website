@@ -16,7 +16,7 @@ const DogGrid = styled.div`
 `;
 export const HappyDogs = () => {
   return (
-    <Section paddedSides={false}>
+    <Section paddedSides={false} id="happy-dogs">
       <SectionHeader>Happy Dogs</SectionHeader>
       <DogGrid>
         {new Array(15).fill(".").map((_, index) => (

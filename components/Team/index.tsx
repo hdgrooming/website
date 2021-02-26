@@ -81,7 +81,7 @@ const TeamGrid = styled.div`
 `;
 export const Team = () => {
   return (
-    <Section>
+    <Section id="team">
       <SectionHeader>Meet the Team</SectionHeader>
       <TeamGrid>
         {TEAM_MEMBERS.map((tm) => (

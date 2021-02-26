@@ -2,6 +2,7 @@ import Image from "next/image";
 import styled from "@emotion/styled";
 
 import { theme } from "../../theme";
+import { useCallback } from "react";
 
 const Container = styled.nav`
   box-sizing: border-box;
@@ -37,6 +38,8 @@ const NavLink = styled.a`
   cursor: pointer;
   transition: color 0.1s ease-in-out;
   padding: 8px;
+  color: black;
+  text-decoration: none;
 
   &:hover {
     color: ${theme.color.red};
@@ -53,16 +56,33 @@ const Line = styled.div`
 `;
 
 export const Navbar = () => {
+  const handleLinkClick = useCallback<React.MouseEventHandler>((event) => {
+    event.preventDefault();
+    const id = event.currentTarget.getAttribute("href");
+    const element = document.querySelector(id!);
+    element?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
+
   return (
     <Container>
       <Image src="/images/logo1.png" width={222} height={171} />
       <LinksContainer>
         <Line />
-        <NavLink>Home</NavLink>
-        <NavLink>Team</NavLink>
-        <NavLink>Services</NavLink>
-        <NavLink>Happy Dogs</NavLink>
-        <NavLink>Contact Us</NavLink>
+        <NavLink href="#top" onClick={handleLinkClick}>
+          Home
+        </NavLink>
+        <NavLink href="#team" onClick={handleLinkClick}>
+          Team
+        </NavLink>
+        <NavLink href="#services" onClick={handleLinkClick}>
+          Services
+        </NavLink>
+        <NavLink href="#happy-dogs" onClick={handleLinkClick}>
+          Happy Dogs
+        </NavLink>
+        <NavLink href="#contact" onClick={handleLinkClick}>
+          Contact Us
+        </NavLink>
         <Line />
       </LinksContainer>
     </Container>
