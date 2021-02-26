@@ -31,7 +31,8 @@ const BoBContainer = styled.div`
 
 const BestOfBest = () => (
   <BoBContainer>
-    <Image src="/images/best.png" width={488} height={452} />
+    {/* <Image src="/images/best.png" width={488} height={452} /> */}
+    <img src="/images/best.png" width={488} height={452} />
     <h4>Voted frederick's best of the best 3 years in a row!</h4>
   </BoBContainer>
 );

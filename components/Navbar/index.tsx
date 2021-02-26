@@ -65,7 +65,8 @@ export const Navbar = () => {
 
   return (
     <Container>
-      <Image src="/images/logo1.png" width={222} height={171} />
+      {/* <Image src="/images/logo1.png" width={222} height={171} /> */}
+      <img src="/images/logo1.png" width={222} height={171} />
       <LinksContainer>
         <Line />
         <NavLink href="#top" onClick={handleLinkClick}>

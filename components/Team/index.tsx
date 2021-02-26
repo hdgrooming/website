@@ -64,7 +64,8 @@ const TeamMemberItem = ({
 }: TeamMember) => {
   return (
     <TeamMemberItemContainer>
-      <Image src={imageSrc} width={329} height={400} />
+      {/* <Image src={imageSrc} width={329} height={400} /> */}
+      <img src={imageSrc} width={329} height={400} />
       <h5> - {name} - </h5>
       <h6>{title}</h6>
     </TeamMemberItemContainer>

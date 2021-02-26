@@ -40,7 +40,7 @@ const LocationItemContainer = styled.div`
   }
 `;
 
-const LocationImage = styled(Image)`
+const LocationImage = styled.img`
   border: 6px solid #e5e5e5;
 `;
 
