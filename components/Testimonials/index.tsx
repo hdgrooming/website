@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { animated, useTransition } from "react-spring";
 
 import { theme } from "../../theme";
@@ -23,39 +23,70 @@ const TESTIMONIALS: Testimonial[] = [
     key: 0,
   },
   {
-    text: "cool",
+    text: "So beyond stoked. Great work. Keep it up!",
     name: "May",
     key: 1,
   },
 ];
 
+const TestimonialText = styled(animated.div)`
+  /* position: absolute; */
+  text-align: center;
+  width: 100%;
+  font-family: ${theme.font.sans};
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  h5 {
+    font-style: italic;
+    font-weight: 300;
+  }
+`;
+
 export const Testimonials = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
 
   const transitions = useTransition(testimonialIndex, (p) => p, {
-    from: { opacity: 0, transform: "translate3d(100%,0,0)" },
-    enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-    leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
+    from: { opacity: 0, position: "absolute" },
+    enter: { opacity: 1, position: "initial" },
+    leave: { opacity: 0, position: "absolute" },
   });
 
-  console.log(TESTIMONIALS);
+  const incrementIndex = useCallback(
+    () =>
+      setTestimonialIndex((index) =>
+        !TESTIMONIALS[index + 1] ? 0 : index + 1
+      ),
+    [TESTIMONIALS]
+  );
+
+  useEffect(() => {
+    const interval = setInterval(incrementIndex, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <Section>
       <Header>Testimonials</Header>
-      <div style={{ height: "500px" }}>
-        {transitions.map(({ item = 0, props, key }) => {
+      <div
+        style={{
+          position: "relative",
+          paddingBottom: "80px",
+          borderBottom: `3px solid #595959`,
+        }}
+      >
+        {transitions.map(({ item = 0, props, key, state }) => {
           const testimonial = TESTIMONIALS[item];
+
           return (
-            <animated.div key={key} style={props}>
+            <TestimonialText key={key} style={props}>
               {testimonial.text}
-            </animated.div>
+              <h5>- {testimonial.name}</h5>
+            </TestimonialText>
           );
         })}
       </div>
-      <button onClick={() => setTestimonialIndex((i) => (i ? 0 : 1))}>
-        click
-      </button>
     </Section>
   );
 };

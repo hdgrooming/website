@@ -77,7 +77,7 @@ const TeamGrid = styled.div`
   grid-gap: 46px;
   ${theme.media.tablet("grid-template-columns: 1fr 1fr;")}
 
-  ${theme.media.phone("grid-template-columns: 1fr;")};
+  ${theme.media.phone("grid-template-columns: 1fr; justify-items: center;")};
 `;
 export const Team = () => {
   return (

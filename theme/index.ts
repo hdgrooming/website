@@ -10,7 +10,13 @@ export const theme = {
     sans: "Alef",
     serif: "Brim-Narrow",
   },
+  shadow: "0 0 4px 2px rgba(50, 50, 50, 0.4)",
   media: {
+    middleScreen: (styles: string) => `
+    @media (max-width: 1200px) {
+      ${styles}
+    }
+    `,
     tablet: (styles: string) => `
     @media (max-width: 992px) {
       ${styles}

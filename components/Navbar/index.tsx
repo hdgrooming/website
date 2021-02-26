@@ -8,6 +8,14 @@ const Container = styled.nav`
   height: 300px;
   padding: 30px 70px;
   text-align: center;
+  position: sticky;
+  top: -201px;
+  background: ${theme.color.white};
+  box-shadow: ${theme.shadow};
+  z-index: 2;
+
+  ${theme.media.tablet("padding: 30px 30px")}
+  ${theme.media.phone("padding: 30px 10px")}
 `;
 
 const LinksContainer = styled.div`

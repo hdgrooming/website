@@ -26,6 +26,10 @@ const LocationItemContainer = styled.div`
   font-family: ${theme.font.sans};
   font-size: 24px;
 
+  &:nth-child(2) {
+    justify-self: end;
+  }
+
   h5 {
     text-transform: uppercase;
     font-weight: 700;
@@ -59,6 +63,7 @@ const LocationsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 24px;
+  justify-items: stretch;
 
   ${theme.media.phone("grid-template-columns: 1fr;")}
 `;

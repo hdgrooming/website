@@ -11,9 +11,11 @@ const Container = styled(Section)`
   font-family: ${theme.font.sans};
   font-size: 24px;
   text-align: center;
+  overflow: hidden;
 
   img {
     position: absolute;
+    max-width: 100%;
   }
 
   img:first-of-type {
@@ -23,12 +25,20 @@ const Container = styled(Section)`
   img:last-of-type {
     right: -24px;
     bottom: -80px;
+
+    ${theme.media.tablet("display: none;")}
   }
+`;
+
+const BottomBlurb = styled.div`
+  margin-top: 200px;
+
+  ${theme.media.tablet("margin-top: 80px;")}
 `;
 
 export const Services = () => {
   return (
-    <Container>
+    <Container paddedSides="small">
       <SectionHeader>Services</SectionHeader>
       <img src="/images/left_prints.png" />
       <img src="/images/right_prints.png" />
@@ -38,10 +48,10 @@ export const Services = () => {
         services can be booked over the phone. We cannot guarentee availability
         for bath or grooming service packages to clients without appointments.
       </div>
-      <div style={{ marginTop: "400px" }}>
+      <BottomBlurb>
         We recommend booking grooming appointments at least one week in advance
         to secure the appointment times that are most convenient for you.
-      </div>
+      </BottomBlurb>
     </Container>
   );
 };
