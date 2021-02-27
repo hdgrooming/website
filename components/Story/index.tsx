@@ -55,7 +55,7 @@ const StoryBlurb = styled.div`
 
   p {
     font-family: ${theme.font.sans};
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     margin: 0;
     margin-top: 30px;

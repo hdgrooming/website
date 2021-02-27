@@ -45,7 +45,7 @@ const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 
 const TeamMemberItemContainer = styled.div`
   font-family: ${theme.font.sans};
-  font-size: 24px;
+  font-size: 18px;
 
   h5 {
     font-weight: 700;
@@ -54,6 +54,10 @@ const TeamMemberItemContainer = styled.div`
   h6 {
     margin: 6px 0 0;
     font-weight: 400;
+  }
+
+  img {
+    width: 100%;
   }
 `;
 
@@ -65,7 +69,7 @@ const TeamMemberItem = ({
   return (
     <TeamMemberItemContainer>
       {/* <Image src={imageSrc} width={329} height={400} /> */}
-      <img src={imageSrc} width={329} height={400} />
+      <img src={imageSrc} />
       <h5> - {name} - </h5>
       <h6>{title}</h6>
     </TeamMemberItemContainer>

@@ -24,7 +24,7 @@ const LOCATIONS: LocationItemProps[] = [
 
 const LocationItemContainer = styled.div`
   font-family: ${theme.font.sans};
-  font-size: 24px;
+  font-size: 18px;
 
   &:nth-child(2) {
     justify-self: end;

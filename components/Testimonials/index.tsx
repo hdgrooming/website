@@ -30,14 +30,14 @@ const TESTIMONIALS: Testimonial[] = [
 ];
 
 const TestimonialText = styled(animated.div)`
-  /* position: absolute; */
   text-align: center;
   width: 100%;
   font-family: ${theme.font.sans};
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  min-height: 300px;
+  color: #232323;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  min-height: 200px;
 
   h5 {
     font-style: italic;

@@ -25,7 +25,7 @@ const LinksContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   font-family: ${theme.font.sans};
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
 
   ${theme.media.tablet("font-size: 18px;")}

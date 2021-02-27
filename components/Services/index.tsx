@@ -8,7 +8,7 @@ const Container = styled(Section)`
   background: ${theme.color.darkGreen};
   color: ${theme.color.white};
   font-family: ${theme.font.sans};
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   overflow: hidden;
 
