@@ -11,6 +11,9 @@ const DogGrid = styled.div`
   justify-content: center;
   padding: 0 180px;
 
+  ${theme.media.middleScreen("padding: 0 40px;")}
+  ${theme.media.tablet("padding: 0 10px;")}
+
   ${theme.media.middleScreen("grid-template-columns: 1fr 1fr;")}
   ${theme.media.tablet("grid-template-columns: 1fr;")}
 `;

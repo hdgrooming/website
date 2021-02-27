@@ -42,12 +42,13 @@ const LocationItemContainer = styled.div`
 
 const LocationImage = styled.img`
   border: 6px solid #e5e5e5;
+  width: 100%;
 `;
 
 const LocationItem = ({ label, imageSrc, address }: LocationItemProps) => {
   return (
     <LocationItemContainer>
-      <LocationImage src={imageSrc} width={507} height={307} />
+      <LocationImage src={imageSrc} />
       <h5>{label}</h5>
       <div>{address}</div>
     </LocationItemContainer>
@@ -62,8 +63,8 @@ const Container = styled(Section)`
 const LocationsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 24px;
-  justify-items: stretch;
+  grid-gap: 66px;
+  justify-items: center;
 
   ${theme.media.phone("grid-template-columns: 1fr;")}
 `;
