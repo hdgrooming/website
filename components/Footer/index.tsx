@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { theme } from "../../theme";
 
 const Container = styled.footer`
   padding: 8px;
@@ -6,6 +7,7 @@ const Container = styled.footer`
   align-items: flex-end;
   justify-content: center;
   text-align: center;
+  font-family: ${theme.font.sans};
 `;
 export const Footer = () => {
   return (

@@ -30,7 +30,9 @@ const Container = styled(Section)`
 `;
 
 const Blurb = styled.div`
-  padding: 0 80px;
+  width: 50%;
+  margin: 0 auto;
+  ${theme.media.phone("width: 90%;")}
 `;
 
 const BottomBlurb = styled(Blurb)`
@@ -46,10 +48,9 @@ export const Services = () => {
       <img src="/images/left_prints.png" />
       <img src="/images/right_prints.png" />
       <Blurb>
-        Quick services such as nail trimming, teeth brushing, and ear cleaning
-        are available to walk-in Clients. Appointments for grooming and bath
-        services can be booked over the phone. We cannot guarentee availability
-        for bath or grooming service packages to clients without appointments.
+        Nose to tail, we've got you covered. From nail trims, baths and teeth
+        brushing to fully groomed haircuts, we'll have your pup feeling fresh.
+        Appointments for all services can be booked over the phone.
       </Blurb>
       <BottomBlurb>
         We recommend booking grooming appointments at least one week in advance

@@ -25,6 +25,8 @@ const LocationContactItems = styled.div`
   grid-gap: 12px;
   grid-template-columns: repeat(${LOCATIONS.length}, 1fr);
   ${theme.media.tablet("font-size: 24px; padding: 36px 2.5%;")}
+
+  ${theme.media.phone("grid-template-columns: 1fr; grid-gap: 32px;")}
 `;
 const LocationContactItem = styled.div`
   text-align: center;
@@ -52,8 +54,6 @@ export const Contact = () => {
           </LocationContactItem>
         ))}
       </LocationContactItems>
-
-      <QuestionForm />
     </Container>
   );
 };

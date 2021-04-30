@@ -5,9 +5,9 @@ export const Section = styled.section<{ paddedSides?: boolean }>`
   padding: 80px ${({ paddedSides = true }) => (paddedSides ? "180px" : "0px")};
 
   ${({ paddedSides = true }) =>
-    paddedSides && theme.media.tablet("padding: 80px 100px;")}
+    paddedSides && theme.media.tablet("padding: 48px 100px;")}
   ${({ paddedSides = true }) =>
-    paddedSides && theme.media.phone("padding: 80px 40px;")}
+    paddedSides && theme.media.phone("padding: 48px 40px;")}
 `;
 
 export const SectionHeader = styled.h2`

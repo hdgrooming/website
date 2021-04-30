@@ -44,7 +44,7 @@ const StoryBlurb = styled.div`
   justify-content: center;
   padding: 0 60px;
 
-  ${theme.media.phone("text-align: center;")}
+  ${theme.media.phone("text-align: center; padding: 0 40px;")}
 
   h3 {
     font-family: ${theme.font.serif};

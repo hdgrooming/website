@@ -59,12 +59,13 @@ export const Navbar = () => {
     event.preventDefault();
     const id = event.currentTarget.getAttribute("href");
     const element = document.querySelector(id!);
-    element?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (!element) return;
+    const y = element.getBoundingClientRect().top + window.pageYOffset - 40;
+    window.scrollTo({ top: y, behavior: "smooth" });
   }, []);
 
   return (
     <Container>
-      {/* <Image src="/images/logo1.png" width={222} height={171} /> */}
       <img src="/images/logo1.png" width={222} height={171} />
       <LinksContainer>
         <Line />

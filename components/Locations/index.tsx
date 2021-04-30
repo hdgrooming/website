@@ -12,7 +12,7 @@ const LocationItemContainer = styled.div`
   grid-gap: 50px;
   justify-items: center;
 
-  &:nth-child(2) {
+  &:nth-of-type(2) {
     justify-self: end;
   }
 `;
@@ -25,6 +25,7 @@ const LocationInfo = styled.div`
   font-weight: 400;
   grid-gap: 12px;
   width: 50%;
+  ${theme.media.phone("width: 90%;")}
 
   h5 {
     text-transform: uppercase;
