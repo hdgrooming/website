@@ -1,8 +1,7 @@
-import Image from "next/image";
 import styled from "@emotion/styled";
+import { useCallback } from "react";
 
 import { theme } from "../../theme";
-import { useCallback } from "react";
 
 const Container = styled.nav`
   box-sizing: border-box;
