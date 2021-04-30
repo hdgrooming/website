@@ -1,14 +1,16 @@
+import Head from "next/head";
 import "normalize.css";
-import { ParallaxProvider } from "react-scroll-parallax";
 
-import "../theme/global.css";
 import "../theme/fonts.css";
 
 const MyApp = ({ Component, pageProps }: any) => {
   return (
-    <ParallaxProvider>
+    <>
+      <Head>
+        <title>Happy Dog Grooming Salon</title>
+      </Head>
       <Component {...pageProps} />
-    </ParallaxProvider>
+    </>
   );
 };
 

@@ -3,40 +3,37 @@ import styled from "@emotion/styled";
 
 import { theme } from "../../theme";
 import { Section, SectionHeader } from "../Section";
-
-type LocationItemProps = {
-  imageSrc: string;
-  label: string;
-  address: string;
-};
-const LOCATIONS: LocationItemProps[] = [
-  {
-    imageSrc: "/images/frederick.png",
-    label: "Frederick",
-    address: "5733 Buckeystown Pike Frederick, MD 21704",
-  },
-  {
-    imageSrc: "/images/mt_airy.png",
-    label: "Mount Airy",
-    address: "203 E Ridgeville Blvd, Mt Airy, MD 21771",
-  },
-];
+import { LOCATIONS, Location } from "../../config/locations";
 
 const LocationItemContainer = styled.div`
   font-family: ${theme.font.sans};
-  font-size: 18px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 50px;
+  justify-items: center;
 
   &:nth-child(2) {
     justify-self: end;
   }
+`;
+
+const LocationInfo = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  grid-gap: 12px;
+  width: 50%;
 
   h5 {
     text-transform: uppercase;
     font-weight: 700;
+    margin: 0;
   }
 
-  div {
-    font-weight: 400;
+  a {
+    color: white;
   }
 `;
 
@@ -45,12 +42,15 @@ const LocationImage = styled.img`
   width: 100%;
 `;
 
-const LocationItem = ({ label, imageSrc, address }: LocationItemProps) => {
+const LocationItem = ({ label, imageSrc, address, phone }: Location) => {
   return (
     <LocationItemContainer>
       <LocationImage src={imageSrc} />
-      <h5>{label}</h5>
-      <div>{address}</div>
+      <LocationInfo>
+        <h5>{label}</h5>
+        <div>{address}</div>
+        <a href={`tel:${phone}`}>{phone}</a>
+      </LocationInfo>
     </LocationItemContainer>
   );
 };

@@ -19,5 +19,5 @@ export const SectionHeader = styled.h2`
   font-weight: 100;
 
   ${theme.media.tablet("font-size: 48px;")}
-  ${theme.media.phone("font-size: 36px;")}
+  ${theme.media.phone("font-size: 36px; margin-bottom: 48px")}
 `;
