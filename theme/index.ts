@@ -7,7 +7,7 @@ export const theme = {
     white: "#fff",
   },
   font: {
-    sans: "Alef",
+    sans: "Alef, sans-serif",
     serif: "Brim-Narrow",
   },
   shadow: "0 0 4px 2px rgba(50, 50, 50, 0.4)",
