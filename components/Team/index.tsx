@@ -12,12 +12,12 @@ const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Laura",
-    title: "Co-Founder, COO",
+    title: "Co-Founder, Groomer",
     imageSrc: "/images/team/laura.jpeg",
   },
   {
     name: "Jim",
-    title: "Co-Founder, CEO",
+    title: "Co-Founder, Handyman",
     imageSrc: "/images/team/jim.jpeg",
   },
   {
