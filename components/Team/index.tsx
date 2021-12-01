@@ -30,7 +30,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   { name: "Alisha", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
   { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
   { name: "Hannah", title: "Groomer", imageSrc: "/images/team/hannah.jpeg" },
-  { name: "Dan", title: "Lead Bather", imageSrc: "/images/team/dan.jpeg" },
+  { name: "Dan", title: "Lead Bather", imageSrc: "/images/team/dan.jpg" },
   { name: "Corey", title: "Bather", imageSrc: "/images/team/corey.jpeg" },
   { name: "Caleb", title: "Bather" },
   { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
