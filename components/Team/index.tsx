@@ -11,6 +11,16 @@ type TeamMember = {
 const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 const TEAM_MEMBERS: TeamMember[] = [
   {
+    name: "Laura",
+    title: "Co-Founder, COO",
+    imageSrc: "/images/team/laura.jpeg",
+  },
+  {
+    name: "Jim",
+    title: "Co-Founder, CEO",
+    imageSrc: "/images/team/jim.jpeg",
+  },
+  {
     name: "Kelly",
     title: "Manager/Groomer",
     imageSrc: "/images/team/kelly.jpg",
@@ -21,16 +31,14 @@ const TEAM_MEMBERS: TeamMember[] = [
     imageSrc: "/images/team/erika.jpg",
   },
   { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
-
   { name: "Alisha", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
   { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
   { name: "Hannah", title: "Groomer", imageSrc: "/images/team/hannah.jpeg" },
   { name: "Dan", title: "Lead Bather", imageSrc: "/images/team/dan.jpeg" },
-  { name: "Corey", title: "Bather" },
+  { name: "Corey", title: "Bather", imageSrc: "/images/team/corey.jpeg" },
   { name: "Caleb", title: "Bather" },
   { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
   { name: "Maddy", title: "Bather" },
-
   {
     name: "Shalon",
     title: "Receptionist",
@@ -41,9 +49,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     title: "Manager",
     imageSrc: "/images/team/allie.jpeg",
   },
-
   { name: "Frankie", title: "Groomer", imageSrc: "/images/team/frankie.jpeg" },
-
   {
     name: "Devan",
     title: "Groomer",
