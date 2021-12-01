@@ -20,14 +20,16 @@ const TEAM_MEMBERS: TeamMember[] = [
     title: "Assistant Manager/Groomer",
     imageSrc: "/images/team/erika.jpg",
   },
-  { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
   { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
 
-  { name: "Alicia", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
+  { name: "Alisha", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
+  { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
   { name: "Hannah", title: "Groomer", imageSrc: "/images/team/hannah.jpeg" },
-  { name: "Frankie", title: "Groomer", imageSrc: "/images/team/frankie.jpeg" },
   { name: "Dan", title: "Lead Bather", imageSrc: "/images/team/dan.jpeg" },
+  { name: "Corey", title: "Bather" },
+  { name: "Caleb", title: "Bather" },
   { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
+  { name: "Maddy", title: "Bather" },
 
   {
     name: "Shalon",
@@ -39,21 +41,29 @@ const TEAM_MEMBERS: TeamMember[] = [
     title: "Manager",
     imageSrc: "/images/team/allie.jpeg",
   },
-  {
-    name: "Faith",
-    title: "Groomer",
-    imageSrc: "/images/team/faith.png",
-  },
+
+  { name: "Frankie", title: "Groomer", imageSrc: "/images/team/frankie.jpeg" },
 
   {
     name: "Devan",
     title: "Groomer",
-    imageSrc: "/images/team/devan.png",
   },
   {
     name: "Holly",
     title: "Groomer",
     imageSrc: "/images/team/holly.png",
+  },
+  {
+    name: "Faith",
+    title: "Groomer",
+  },
+  {
+    name: "Gabby",
+    title: "Bather",
+  },
+  {
+    name: "Jai",
+    title: "Bather",
   },
   {
     name: "Emma",
