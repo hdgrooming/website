@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 
-import { Section, SectionHeader } from "../Section";
+import { Container, Section, SectionHeader } from "../Section";
 import { theme } from "../../theme";
 
-const Container = styled(Section)`
+const ServicesSection = styled(Section)`
   position: relative;
   background: ${theme.color.darkGreen};
   color: ${theme.color.white};
@@ -30,7 +30,7 @@ const Container = styled(Section)`
 `;
 
 const Blurb = styled.div`
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   ${theme.media.phone("width: 90%;")}
 `;
@@ -43,19 +43,22 @@ const BottomBlurb = styled(Blurb)`
 
 export const Services = () => {
   return (
-    <Container paddedSides={false} id="services">
-      <SectionHeader>Services</SectionHeader>
-      <img src="/images/left_prints.png" />
-      <img src="/images/right_prints.png" />
-      <Blurb>
-        Nose to tail, we've got you covered. From nail trims, baths and teeth
-        brushing to fully groomed haircuts, we'll have your pup feeling fresh.
-        Appointments for all services can be booked over the phone.
-      </Blurb>
-      <BottomBlurb>
-        We recommend booking grooming appointments at least one week in advance
-        to secure the appointment times that are most convenient for you.
-      </BottomBlurb>
-    </Container>
+    <ServicesSection id="services">
+      <Container>
+        <SectionHeader>Services</SectionHeader>
+        <img src="/images/left_prints.png" />
+        <img src="/images/right_prints.png" />
+        <Blurb>
+          Nose to tail, we've got you covered. From nail trims, baths and teeth
+          brushing to fully groomed haircuts, we'll have your pup feeling fresh.
+          Appointments for all services can be booked over the phone.
+        </Blurb>
+        <BottomBlurb>
+          We recommend booking grooming appointments at least one week in
+          advance to secure the appointment times that are most convenient for
+          you.
+        </BottomBlurb>
+      </Container>
+    </ServicesSection>
   );
 };

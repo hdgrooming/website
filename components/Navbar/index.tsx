@@ -69,9 +69,6 @@ export const Navbar = () => {
       <img src="/images/logo1.png" width={222} height={171} />
       <LinksContainer>
         <Line />
-        <NavLink href="#top" onClick={handleLinkClick}>
-          Home
-        </NavLink>
         <NavLink href="#team" onClick={handleLinkClick}>
           Team
         </NavLink>
@@ -79,7 +76,7 @@ export const Navbar = () => {
           Services
         </NavLink>
         <NavLink href="#happy-dogs" onClick={handleLinkClick}>
-          Happy Dogs
+          Gallery
         </NavLink>
         <NavLink href="#contact" onClick={handleLinkClick}>
           Contact Us

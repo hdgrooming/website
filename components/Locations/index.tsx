@@ -1,8 +1,7 @@
-import Image from "next/image";
 import styled from "@emotion/styled";
 
 import { theme } from "../../theme";
-import { Section, SectionHeader } from "../Section";
+import { SectionHeader, Section, Container } from "../Section";
 import { LOCATIONS, Location } from "../../config/locations";
 
 const LocationItemContainer = styled.div`
@@ -11,6 +10,7 @@ const LocationItemContainer = styled.div`
   grid-template-columns: auto;
   grid-gap: 50px;
   justify-items: center;
+  width: 100%;
 
   &:nth-of-type(2) {
     justify-self: end;
@@ -56,7 +56,7 @@ const LocationItem = ({ label, imageSrc, address, phone }: Location) => {
   );
 };
 
-const Container = styled(Section)`
+const LocationsSection = styled(Section)`
   background: ${theme.color.red};
   color: ${theme.color.white};
 `;
@@ -65,21 +65,23 @@ const LocationsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 66px;
-  justify-items: center;
+  justify-items: stretch;
 
-  ${theme.media.phone("grid-template-columns: 1fr;")}
+  ${theme.media.tablet("grid-template-columns: 1fr;")}
 `;
 
 export const Locations = () => {
   return (
-    <Container>
-      <SectionHeader>Locations</SectionHeader>
+    <LocationsSection>
+      <Container>
+        <SectionHeader>Locations</SectionHeader>
 
-      <LocationsGrid>
-        {LOCATIONS.map((l) => (
-          <LocationItem key={l.label} {...l} />
-        ))}
-      </LocationsGrid>
-    </Container>
+        <LocationsGrid>
+          {LOCATIONS.map((l) => (
+            <LocationItem key={l.label} {...l} />
+          ))}
+        </LocationsGrid>
+      </Container>
+    </LocationsSection>
   );
 };

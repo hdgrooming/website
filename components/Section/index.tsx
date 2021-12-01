@@ -1,14 +1,6 @@
 import styled from "@emotion/styled";
+
 import { theme } from "../../theme";
-
-export const Section = styled.section<{ paddedSides?: boolean }>`
-  padding: 80px ${({ paddedSides = true }) => (paddedSides ? "180px" : "0px")};
-
-  ${({ paddedSides = true }) =>
-    paddedSides && theme.media.tablet("padding: 48px 100px;")}
-  ${({ paddedSides = true }) =>
-    paddedSides && theme.media.phone("padding: 48px 40px;")}
-`;
 
 export const SectionHeader = styled.h2`
   margin-bottom: 80px;
@@ -20,4 +12,12 @@ export const SectionHeader = styled.h2`
 
   ${theme.media.tablet("font-size: 48px;")}
   ${theme.media.phone("font-size: 36px; margin-bottom: 48px")}
+`;
+
+export const Section = styled.section`
+  padding: 80px 24px;
+`;
+export const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
 `;

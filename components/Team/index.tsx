@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
-import Image from "next/image";
 
 import { theme } from "../../theme";
-import { Section, SectionHeader } from "../Section";
+import { Container, Section, SectionHeader } from "../Section";
 
 type TeamMember = {
   name: string;
@@ -10,6 +9,15 @@ type TeamMember = {
   imageSrc?: string;
 };
 const TEAM_MEMBERS: TeamMember[] = [
+  { name: "Kelly", title: "Manager", imageSrc: "/images/team/kelly.jpg" },
+  { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
+  { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
+  { name: "Erika", title: "Groomer", imageSrc: "/images/team/erika.jpg" },
+  {
+    name: "Shallon",
+    title: "Receptionist",
+    imageSrc: "/images/team/shallon.jpg",
+  },
   {
     name: "Faith",
     title: "Frederick Groomer",
@@ -17,27 +25,22 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Allie",
-    title: "Frederick Manager",
+    title: "Manager",
     imageSrc: "/images/team/allie.png",
   },
   {
     name: "Devan",
-    title: "Frederick Groomer",
+    title: "Groomer",
     imageSrc: "/images/team/devan.png",
   },
   {
     name: "Emma",
-    title: "Frederick Receptionist",
+    title: "Receptionist",
     imageSrc: "/images/team/emma.png",
   },
   {
-    name: "Wes",
-    title: "Frederick Bather",
-    imageSrc: "/images/team/wes.png",
-  },
-  {
     name: "Holly",
-    title: "Frederick Groomer",
+    title: "Groomer",
     imageSrc: "/images/team/holly.png",
   },
 ];
@@ -46,6 +49,7 @@ const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 const TeamMemberItemContainer = styled.div`
   font-family: ${theme.font.sans};
   font-size: 18px;
+  text-align: center;
 
   h5 {
     font-weight: 700;
@@ -58,6 +62,9 @@ const TeamMemberItemContainer = styled.div`
 
   img {
     width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
   }
 `;
 
@@ -68,7 +75,6 @@ const TeamMemberItem = ({
 }: TeamMember) => {
   return (
     <TeamMemberItemContainer>
-      {/* <Image src={imageSrc} width={329} height={400} /> */}
       <img src={imageSrc} />
       <h5> - {name} - </h5>
       <h6>{title}</h6>
@@ -87,12 +93,14 @@ const TeamGrid = styled.div`
 export const Team = () => {
   return (
     <Section id="team">
-      <SectionHeader>Meet the Team</SectionHeader>
-      <TeamGrid>
-        {TEAM_MEMBERS.map((tm) => (
-          <TeamMemberItem key={tm.name} {...tm} />
-        ))}
-      </TeamGrid>
+      <Container>
+        <SectionHeader>Meet the Team</SectionHeader>
+        <TeamGrid>
+          {TEAM_MEMBERS.map((tm) => (
+            <TeamMemberItem key={tm.name} {...tm} />
+          ))}
+        </TeamGrid>
+      </Container>
     </Section>
   );
 };
