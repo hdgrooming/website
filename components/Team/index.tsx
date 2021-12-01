@@ -10,15 +10,23 @@ type TeamMember = {
 };
 const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 const TEAM_MEMBERS: TeamMember[] = [
-  { name: "Kelly", title: "Manager", imageSrc: "/images/team/kelly.jpg" },
+  {
+    name: "Kelly",
+    title: "Manager/Groomer",
+    imageSrc: "/images/team/kelly.jpg",
+  },
   { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
   { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
-  { name: "Erika", title: "Groomer", imageSrc: "/images/team/erika.jpg" },
+  {
+    name: "Erika",
+    title: "Assistant Manager/Groomer",
+    imageSrc: "/images/team/erika.jpg",
+  },
   { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
-  { name: "Alicia", title: "Bather", imageSrc: "/images/team/alicia.jpg" },
+  { name: "Alicia", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
   { name: "Hannah", title: "Bather", imageSrc: "/images/team/hannah.jpeg" },
   { name: "Frankie", title: "Groomer", imageSrc: "/images/team/frankie.jpeg" },
-  { name: "Dan", title: "Bather" },
+  { name: "Dan", title: "Lead Bather", imageSrc: "/images/team/dan.jpeg" },
   {
     name: "Shalon",
     title: "Receptionist",
