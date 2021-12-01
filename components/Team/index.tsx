@@ -66,6 +66,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Gabby",
     title: "Bather",
+    imageSrc: "/images/team/gabby.jpeg",
   },
   {
     name: "Jai",
