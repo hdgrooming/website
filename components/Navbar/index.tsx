@@ -9,6 +9,8 @@ const Container = styled.nav`
   padding: 30px 70px;
   text-align: center;
   position: sticky;
+  width: 100vw;
+  left: 0;
   top: -201px;
   background: ${theme.color.white};
   box-shadow: ${theme.shadow};
