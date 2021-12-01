@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import { theme } from "../../theme";
 import { LOCATIONS } from "../../config/locations";
 import { Section, SectionHeader } from "../Section";
-import { QuestionForm } from "../QuestionForm";
 
 const Container = styled(Section)`
   background: ${theme.color.red};
