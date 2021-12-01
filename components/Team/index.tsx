@@ -8,25 +8,30 @@ type TeamMember = {
   title: string;
   imageSrc?: string;
 };
+const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 const TEAM_MEMBERS: TeamMember[] = [
   { name: "Kelly", title: "Manager", imageSrc: "/images/team/kelly.jpg" },
   { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
   { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
   { name: "Erika", title: "Groomer", imageSrc: "/images/team/erika.jpg" },
+  { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
+  { name: "Alicia", title: "Bather", imageSrc: "/images/team/alicia.jpg" },
+  { name: "Hannah", title: "Bather", imageSrc: "/images/team/hannah.jpeg" },
+  { name: "Dan", title: "Bather" },
   {
-    name: "Shallon",
+    name: "Shalon",
     title: "Receptionist",
-    imageSrc: "/images/team/shallon.jpg",
+    imageSrc: "/images/team/shalon.jpg",
   },
   {
     name: "Faith",
-    title: "Frederick Groomer",
+    title: "Groomer",
     imageSrc: "/images/team/faith.png",
   },
   {
     name: "Allie",
     title: "Manager",
-    imageSrc: "/images/team/allie.png",
+    imageSrc: "/images/team/allie.jpeg",
   },
   {
     name: "Devan",
@@ -36,7 +41,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Emma",
     title: "Receptionist",
-    imageSrc: "/images/team/emma.png",
+    imageSrc: "/images/team/emma.jpg",
   },
   {
     name: "Holly",
@@ -44,7 +49,6 @@ const TEAM_MEMBERS: TeamMember[] = [
     imageSrc: "/images/team/holly.png",
   },
 ];
-const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 
 const TeamMemberItemContainer = styled.div`
   font-family: ${theme.font.sans};
