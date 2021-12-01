@@ -17,6 +17,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
   { name: "Alicia", title: "Bather", imageSrc: "/images/team/alicia.jpg" },
   { name: "Hannah", title: "Bather", imageSrc: "/images/team/hannah.jpeg" },
+  { name: "Frankie", title: "Groomer", imageSrc: "/images/team/frankie.jpeg" },
   { name: "Dan", title: "Bather" },
   {
     name: "Shalon",
