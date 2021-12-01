@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useLayoutEffect, useState } from "react";
 import { animated, useTransition } from "react-spring";
 
 import { theme } from "../../theme";
@@ -17,8 +17,7 @@ type Testimonial = {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    text:
-      "So beyond happy with our experience! Our Jack Russell is a bit anxious with new people/situations and he did amazingly for his nail trim; they even commended his behavior! I wish we had caught the groomer’s name, but he was phenomenal with our crazy little Dusty who took to him without a second thought! Not to mention, we didn’t realize we needed an appointment and they still HAPPILY worked us in! Thank you guys..we will be returning!",
+    text: "So beyond happy with our experience! Our Jack Russell is a bit anxious with new people/situations and he did amazingly for his nail trim; they even commended his behavior! I wish we had caught the groomer’s name, but he was phenomenal with our crazy little Dusty who took to him without a second thought! Not to mention, we didn’t realize we needed an appointment and they still HAPPILY worked us in! Thank you guys..we will be returning!",
     name: "April",
     key: 0,
   },
@@ -62,7 +61,7 @@ export const Testimonials = () => {
     [TESTIMONIALS]
   );
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const interval = setInterval(incrementIndex, 5000);
 
     return () => clearInterval(interval);
