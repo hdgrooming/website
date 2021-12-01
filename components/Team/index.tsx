@@ -15,27 +15,24 @@ const TEAM_MEMBERS: TeamMember[] = [
     title: "Manager/Groomer",
     imageSrc: "/images/team/kelly.jpg",
   },
-  { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
-  { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
   {
     name: "Erika",
     title: "Assistant Manager/Groomer",
     imageSrc: "/images/team/erika.jpg",
   },
-  { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
+  { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
+  { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
+
   { name: "Alicia", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
   { name: "Hannah", title: "Groomer", imageSrc: "/images/team/hannah.jpeg" },
   { name: "Frankie", title: "Groomer", imageSrc: "/images/team/frankie.jpeg" },
   { name: "Dan", title: "Lead Bather", imageSrc: "/images/team/dan.jpeg" },
+  { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
+
   {
     name: "Shalon",
     title: "Receptionist",
     imageSrc: "/images/team/shalon.jpg",
-  },
-  {
-    name: "Faith",
-    title: "Groomer",
-    imageSrc: "/images/team/faith.png",
   },
   {
     name: "Allie",
@@ -43,19 +40,25 @@ const TEAM_MEMBERS: TeamMember[] = [
     imageSrc: "/images/team/allie.jpeg",
   },
   {
+    name: "Faith",
+    title: "Groomer",
+    imageSrc: "/images/team/faith.png",
+  },
+
+  {
     name: "Devan",
     title: "Groomer",
     imageSrc: "/images/team/devan.png",
   },
   {
-    name: "Emma",
-    title: "Receptionist",
-    imageSrc: "/images/team/emma.jpg",
-  },
-  {
     name: "Holly",
     title: "Groomer",
     imageSrc: "/images/team/holly.png",
+  },
+  {
+    name: "Emma",
+    title: "Receptionist",
+    imageSrc: "/images/team/emma.jpg",
   },
 ];
 
