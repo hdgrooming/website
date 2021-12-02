@@ -27,7 +27,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     imageSrc: "/images/team/erika.jpg",
   },
   { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
-  { name: "Alisha", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
+  { name: "Alicia", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
   { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
   { name: "Hannah", title: "Groomer", imageSrc: "/images/team/hannah.jpeg" },
   { name: "Dan", title: "Lead Bather", imageSrc: "/images/team/dan.jpg" },
