@@ -8,43 +8,72 @@ type TeamMember = {
   title: string;
   imageSrc?: string;
 };
+const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 const TEAM_MEMBERS: TeamMember[] = [
-  { name: "Kelly", title: "Manager", imageSrc: "/images/team/kelly.jpg" },
-  { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
-  { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
-  { name: "Erika", title: "Groomer", imageSrc: "/images/team/erika.jpg" },
   {
-    name: "Shallon",
-    title: "Receptionist",
-    imageSrc: "/images/team/shallon.jpg",
+    name: "Jim and Laura",
+    title: "Owners",
+    imageSrc: "/images/team/jim_and_laura.jpeg",
+  },
+
+  {
+    name: "Kelly",
+    title: "Manager/Groomer",
+    imageSrc: "/images/team/kelly.jpg",
   },
   {
-    name: "Faith",
-    title: "Frederick Groomer",
-    imageSrc: "/images/team/faith.png",
+    name: "Erika",
+    title: "Assistant Manager/Groomer",
+    imageSrc: "/images/team/erika.jpg",
+  },
+  { name: "Toni", title: "Groomer", imageSrc: "/images/team/toni.jpg" },
+  { name: "Alicia", title: "Groomer", imageSrc: "/images/team/alicia.jpg" },
+  { name: "April", title: "Groomer", imageSrc: "/images/team/april.jpg" },
+  { name: "Hannah", title: "Groomer", imageSrc: "/images/team/hannah.jpeg" },
+  { name: "Dan", title: "Lead Bather", imageSrc: "/images/team/dan.jpg" },
+  { name: "Corey", title: "Bather", imageSrc: "/images/team/corey.jpeg" },
+  { name: "Caleb", title: "Bather" },
+  { name: "Taylor", title: "Bather", imageSrc: "/images/team/taylor.jpeg" },
+  { name: "Maddy", title: "Bather" },
+  {
+    name: "Shalon",
+    title: "Receptionist",
+    imageSrc: "/images/team/shalon.jpg",
   },
   {
     name: "Allie",
     title: "Manager",
-    imageSrc: "/images/team/allie.png",
+    imageSrc: "/images/team/allie.jpeg",
   },
+  { name: "Frankie", title: "Groomer", imageSrc: "/images/team/frankie.jpeg" },
   {
     name: "Devan",
     title: "Groomer",
-    imageSrc: "/images/team/devan.png",
-  },
-  {
-    name: "Emma",
-    title: "Receptionist",
-    imageSrc: "/images/team/emma.png",
   },
   {
     name: "Holly",
     title: "Groomer",
     imageSrc: "/images/team/holly.png",
   },
+  {
+    name: "Faith",
+    title: "Groomer",
+  },
+  {
+    name: "Gabby",
+    title: "Bather",
+    imageSrc: "/images/team/gabby.jpeg",
+  },
+  {
+    name: "Jai",
+    title: "Bather",
+  },
+  {
+    name: "Emma",
+    title: "Receptionist",
+    imageSrc: "/images/team/emma.jpg",
+  },
 ];
-const FALLBACK_IMAGE_SRC = "/images/placeholder_member.png";
 
 const TeamMemberItemContainer = styled.div`
   font-family: ${theme.font.sans};

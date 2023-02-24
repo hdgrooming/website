@@ -10,11 +10,7 @@ const LocationItemContainer = styled.div`
   grid-template-columns: auto;
   grid-gap: 50px;
   justify-items: center;
-  width: 100%;
-
-  &:nth-of-type(2) {
-    justify-self: end;
-  }
+  max-width: 350px;
 `;
 
 const LocationInfo = styled.div`
@@ -41,6 +37,8 @@ const LocationInfo = styled.div`
 const LocationImage = styled.img`
   border: 6px solid #e5e5e5;
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 `;
 
 const LocationItem = ({ label, imageSrc, address, phone }: Location) => {
@@ -62,10 +60,10 @@ const LocationsSection = styled(Section)`
 `;
 
 const LocationsGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 66px;
-  justify-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
 
   ${theme.media.tablet("grid-template-columns: 1fr;")}
 `;
