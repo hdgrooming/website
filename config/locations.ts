@@ -17,4 +17,10 @@ export const LOCATIONS: Location[] = [
     address: "5733 Buckeystown Pike Frederick, MD 21704",
     phone: "(301) 364-9118",
   },
+  {
+    imageSrc: "/images/brunswick.jpeg",
+    label: "Brunswick",
+    address: "1201 Dutchmans Creek Dr, Brunswick, MD",
+    phone: "(301) 466-3625",
+  },
 ];

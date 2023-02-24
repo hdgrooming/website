@@ -71,9 +71,9 @@ export const Navbar = () => {
       <img src="/images/logo1.png" width={222} height={171} />
       <LinksContainer>
         <Line />
-        <NavLink href="#team" onClick={handleLinkClick}>
+        {/*<NavLink href="#team" onClick={handleLinkClick}>
           Team
-        </NavLink>
+        </NavLink>*/}
         <NavLink href="#services" onClick={handleLinkClick}>
           Services
         </NavLink>
