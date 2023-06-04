@@ -1,11 +1,14 @@
 import styled from "@emotion/styled";
-import Image from "next/image";
 import { theme } from "../../theme";
 
 const Container = styled.section`
   display: flex;
   padding: 60px 0;
   justify-content: center;
+
+  p {
+    line-height: 1.5;
+  }
 
   ${theme.media.tablet("padding-top: 30px;")}
   ${theme.media.phone("padding-top: 0;")}

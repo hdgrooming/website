@@ -29,9 +29,10 @@ const ServicesSection = styled(Section)`
   }
 `;
 
-const Blurb = styled.div`
+const Blurb = styled.p`
   width: 80%;
   margin: 0 auto;
+  line-height: 1.5;
   ${theme.media.phone("width: 90%;")}
 `;
 
