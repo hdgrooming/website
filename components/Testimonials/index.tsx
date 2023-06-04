@@ -47,11 +47,11 @@ const TestimonialText = styled(animated.div)`
 export const Testimonials = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
 
-  const transitions = useTransition(testimonialIndex, {
+  const transitions = useTransition(TESTIMONIALS, ({
     from: { opacity: 0, position: "absolute" },
     enter: { opacity: 1, position: "initial" },
     leave: { opacity: 0, position: "absolute" },
-  });
+  }));
 
   const incrementIndex = useCallback(
     () =>
@@ -77,11 +77,9 @@ export const Testimonials = () => {
           borderBottom: `3px solid #595959`,
         }}
       >
-        {transitions.map(({ item = 0, props, key, state }) => {
-          const testimonial = TESTIMONIALS[item];
-
+        {transitions((style, testimonial) => {
           return (
-            <TestimonialText key={key} style={props}>
+            <TestimonialText style={style as any}>
               {testimonial.text}
               <h5>- {testimonial.name}</h5>
             </TestimonialText>
