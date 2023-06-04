@@ -47,7 +47,7 @@ const TestimonialText = styled(animated.div)`
 export const Testimonials = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
 
-  const transitions = useTransition(testimonialIndex, (p) => p, {
+  const transitions = useTransition(testimonialIndex, {
     from: { opacity: 0, position: "absolute" },
     enter: { opacity: 1, position: "initial" },
     leave: { opacity: 0, position: "absolute" },
