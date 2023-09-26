@@ -12,7 +12,7 @@ const S = {
     position: sticky;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: calc(100% - 48px);
     background: ${theme.color.red};
     color: ${theme.color.white};
     font-family: ${theme.font.sans};
