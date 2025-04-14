@@ -12,7 +12,10 @@ const Container = styled.footer`
 export const Footer = () => {
   return (
     <Container>
-      <p>Copyright © 2021 Happy Dog Grooming Salon, All Rights Reserved.</p>
+      <p>
+        Copyright © {new Date().getFullYear()} Happy Dog Grooming Salon, All
+        Rights Reserved.
+      </p>
     </Container>
   );
 };

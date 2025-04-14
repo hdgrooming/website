@@ -1,13 +1,10 @@
 import { css, Global } from "@emotion/react";
+import { theme } from "../theme";
 
 export const GlobalStyles = () => (
   <Global
     styles={css`
-      /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+      /* CSS Reset */
       html,
       body,
       div,
@@ -111,7 +108,11 @@ export const GlobalStyles = () => (
         display: block;
       }
       body {
-        line-height: 1;
+        line-height: 1.5;
+        font-family: ${theme.font.sans};
+        color: ${theme.color.darkGray};
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       ol,
       ul {
@@ -131,6 +132,104 @@ export const GlobalStyles = () => (
       table {
         border-collapse: collapse;
         border-spacing: 0;
+      }
+
+      /* Custom Global Styles */
+      html {
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: ${theme.font.serif};
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: ${theme.spacing.md};
+      }
+
+      h1 {
+        font-size: ${theme.font.size.display};
+        ${theme.media.tablet(`font-size: ${theme.font.size.xxxl};`)}
+        ${theme.media.phone(`font-size: ${theme.font.size.xxl};`)}
+      }
+
+      h2 {
+        font-size: ${theme.font.size.xxxl};
+        ${theme.media.tablet(`font-size: ${theme.font.size.xxl};`)}
+        ${theme.media.phone(`font-size: ${theme.font.size.xl};`)}
+      }
+
+      h3 {
+        font-size: ${theme.font.size.xxl};
+        ${theme.media.tablet(`font-size: ${theme.font.size.xl};`)}
+        ${theme.media.phone(`font-size: ${theme.font.size.lg};`)}
+      }
+
+      p {
+        margin-bottom: ${theme.spacing.md};
+      }
+
+      a {
+        color: ${theme.color.red};
+        text-decoration: none;
+        transition: ${theme.transition};
+
+        &:hover {
+          color: ${theme.color.darkRed};
+        }
+      }
+
+      button,
+      .button {
+        display: inline-block;
+        background-color: ${theme.color.red};
+        color: ${theme.color.white};
+        border: none;
+        border-radius: ${theme.radius.md};
+        padding: ${theme.spacing.sm} ${theme.spacing.lg};
+        font-family: ${theme.font.sans};
+        font-size: ${theme.font.size.base};
+        cursor: pointer;
+        transition: ${theme.transition};
+        text-align: center;
+
+        &:hover {
+          background-color: ${theme.color.darkRed};
+        }
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 ${theme.spacing.md};
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        html {
+          font-size: 14px;
+        }
       }
     `}
   />

@@ -26,7 +26,7 @@ export const LOCATIONS: Location[] = [
   {
     imageSrc: "/images/columbia.jpeg",
     label: "Columbia",
-    address: "Columbia, MD",
-    phone: "(301) XXX-XXXX",
+    address: "8827 Centre Park Dr, Columbia, MD 21045",
+    phone: "(667) 240-2424",
   },
 ];
