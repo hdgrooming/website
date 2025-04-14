@@ -23,4 +23,10 @@ export const LOCATIONS: Location[] = [
     address: "1201 Dutchmans Creek Dr, Brunswick, MD",
     phone: "(301) 466-3625",
   },
+  {
+    imageSrc: "/images/columbia.jpeg",
+    label: "Columbia",
+    address: "Columbia, MD",
+    phone: "(301) XXX-XXXX",
+  },
 ];

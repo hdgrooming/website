@@ -74,10 +74,10 @@ export const Story = () => {
         <p>
           Happy Dog Grooming opened its doors in the fall of 2012 with the goal
           of providing local dog owners with high quality grooming services.
-          Operating in both Mount Airy and Frederick, MD - Happy Dog was built
-          on the foundation of creating a comfortable grooming environment for
-          your furry companion, reducing stress, and establishing bath time as a
-          positive experience for all dogs.
+          Operating in Mount Airy, Frederick, Brunswick, and Columbia, MD -
+          Happy Dog was built on the foundation of creating a comfortable
+          grooming environment for your furry companion, reducing stress, and
+          establishing bath time as a positive experience for all dogs.
         </p>
       </StoryBlurb>
     </Container>
